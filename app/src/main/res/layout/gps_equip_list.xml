@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/black_overlay"
+        android:layout_margin="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textViewLocation"
+                    style="@style/listtitleText"
+                    android:text="test" />
+
+                <TextView
+                    android:id="@+id/textViewLat"
+                    style="@style/listSubText"
+                    android:text="test" />
+
+                <TextView
+                    android:id="@+id/textViewLon"
+                    style="@style/listSubText"
+                    android:text="test" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_marginLeft="30dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textViewRtom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="test"
+                    android:textColor="@color/deeppurple"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/textViewType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="test"
+                    android:textColor="@color/deeppurple"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
